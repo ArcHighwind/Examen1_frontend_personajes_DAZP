@@ -5,6 +5,7 @@ export const FormPersonajes = () => {
 
     const {dataForm, resultado, changeHandler, submitHandler} = HookFormaPersonaje();
 
+    //para cuando aprendamos componentes atomicos
     const FormStructure = [
         {
             name: "pname",
@@ -17,6 +18,7 @@ export const FormPersonajes = () => {
             action: changeHandler
         }
     ];
+    // --------------------------------------
 
   return (
     <>

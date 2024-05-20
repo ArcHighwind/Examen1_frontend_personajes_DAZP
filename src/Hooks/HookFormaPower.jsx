@@ -2,12 +2,11 @@ import React from 'react'
 import { useState } from 'react';
 import axios from 'axios';
 
-export const HookFormaPersonaje = () => {
+export const HookFormaPower = () => {
 
     const [dataForm, setDataForm ] = useState (
         {
-            pname: "",
-            p_age: ""
+            power_name: ""
         }
     );
 
@@ -20,7 +19,7 @@ export const HookFormaPersonaje = () => {
 
     const submitHandler = async (event)=>{
         event.preventDefault();
-        const url ="http://localhost:3000/api/personaje";
+        const url ="http://localhost:3000/api/power";
         const result = await axios.post(url, dataForm);
         const dataResult = (await result).data;
         setResultado ( dataResult.message + ' id: ' + dataResult.object_created)
