@@ -8,7 +8,7 @@ export const FormInfo = () => {
 
   return (
     <>
-        <h1> Add a Character</h1>
+        <h1> Add a Character's Information </h1>
         <form onSubmit={submitHandler}>
             <input type='text' name='personalinfo' onChange={changeHandler} placeholder='Enter the Characters Bio'/>
             <br></br>

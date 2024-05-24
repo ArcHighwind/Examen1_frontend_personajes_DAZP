@@ -1,5 +1,5 @@
 import React from 'react'
-import { HookFormaClass } from '../Hooks/HookFormaClass';
+import {HookFormaClass} from '../Hooks/HookFormaClass'
 
 export const FormClass = () => {
 

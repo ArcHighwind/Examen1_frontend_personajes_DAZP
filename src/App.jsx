@@ -7,12 +7,11 @@ import { FormClass } from './ComponentScreen/FormClass';
 import { FormWeapon } from './ComponentScreen/FormWeapons';
 import { FormPower } from './ComponentScreen/FormPower';
 import { FormInfo } from './ComponentScreen/FormInfo';
+import { HomePage } from './ComponentScreen/HomePage';
 
 export const App = () => {
   return (
     <>
-      
-
       <BrowserRouter>
         <Routes>
           <Route path='/table' element={<TablaUsuarios/>} />
@@ -22,6 +21,7 @@ export const App = () => {
           <Route path='/weapon' element={<FormWeapon/>} />
           <Route path='/power' element={<FormPower/>} />
           <Route path='/info' element={<FormInfo/>} />
+          <Route path='/' element={<HomePage/>} />
         </Routes>
       </BrowserRouter>
     </>

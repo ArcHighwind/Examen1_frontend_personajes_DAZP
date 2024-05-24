@@ -1,9 +1,10 @@
-import React from 'react'
+
 import { useState } from 'react';
 import axios from 'axios';
 
-export const HookFormaWeapon = () => {
+import React from 'react'
 
+export const HookFormaInfo = () => {
     const [dataForm, setDataForm ] = useState (
         {
             personalinfo: ""
@@ -23,7 +24,6 @@ export const HookFormaWeapon = () => {
         const result = await axios.post(url, dataForm);
         const dataResult = (await result).data;
         setResultado ( dataResult.message + ' id: ' + dataResult.object_created)
-
     }
 
   return {
@@ -31,3 +31,4 @@ export const HookFormaWeapon = () => {
     changeHandler, submitHandler
   }
 }
+
